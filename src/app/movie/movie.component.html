@@ -1,0 +1,22 @@
+      <div class="col-md-6">
+            <table class="table table-striped">
+            <thead>
+            <tr>
+                    <th>Movie ID</th>
+                    <th>Name</th>
+                    <th>Genre</th>
+                    <th>Description</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let movie of movies">
+                        <td>{{movie.moviesID}}</td>
+                        <td>{{movie.name}}</td>
+                        <td>{{movie.genre}}</td>
+                        <td>{{movie.desc}}</td>
+                    <td><button class="btn btn-danger" (click)="deleteEmployee(employee)"> Edit Movie</button></td>
+                    </tr>
+            </tbody>
+              </table>
+          
+            </div>
